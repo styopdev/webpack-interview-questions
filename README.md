@@ -60,8 +60,9 @@
         filename: "[name].[hash].js"
        }
      ```
-   
-      In this case webpack will generate unique hash for each build and use it for all chunks. Replace `[hash]` with `[chunkhash]` to generate unique hashes for each chunk. This is useful when you dont want to re-download vendors (dependencies) file but you have changes in your application code and want to update it.
+     In this case webpack will generate unique hash for each build and use it for all chunks. Replace `[hash]` with `[chunkhash]` to 
+     generate unique hashes for each chunk. This is useful when you dont want to re-download vendors (dependencies) file but you have 
+     changes in your application code and want to update it.
 
 
 * Describe CommonsChunkPlugin
