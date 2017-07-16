@@ -19,7 +19,7 @@
  
  * What is loader in webpack
   
-  A: Loaders are transformations that are applied on the source code of a module. webpack supports modules written in a variety of languages and preprocessors, via loaders. Loaders describe to webpack how to process non-javaScript modules and include these dependencies into your bundles. The webpack community has built loaders for a wide variety of popular languages and language processors, including.
+  A: Loaders are transformations that are applied on the source code of a module. webpack supports modules written in a variety of languages and preprocessors, via loaders. Loaders describe to webpack how to process non-javaScript modules and include these dependencies into your bundles. The webpack community has built loaders for a wide variety of popular languages and language processors.
 
 * Describe plugin in webpack
   
@@ -27,11 +27,13 @@
 
 * What is difference between loader and plugin?
   
-  A: Name loaders you think are very important and helpful
+  A:
+
+* Name loaders you think are very important and helpful
   
    raw-loader, url-loader, html-loader, file-loader, style-loader, css-loader, script-loader, babel-loader, loaders for typescript, coffescript, less, sass, pug, markdown, etc.
    
-* Name plugins you think are very important and helpful</summary>
+* Name plugins you think are very important and helpful
   
   A: CommonsChunkPlugin, DefinePlugin, HtmlWebpackPlugin, ExtractTextWebpackPlugin, CompressionWebpackPlugin
 
