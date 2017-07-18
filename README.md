@@ -3,7 +3,7 @@
 
 * What is webpack?
    
-  A: webpack is a module bundler for javaScript applications. Webpack recursively builds every module in your application, then packages all of those modules into a small number of bundles.
+  A: webpack is a module bundler for javascript applications. Webpack recursively builds every module in your application, then packages all of those modules into a small number of bundles.
 
 * What is module in this context?
   
@@ -14,10 +14,14 @@
   A:
 
 * In which environment webpack works?
+
+  A: node.js
+
+* Describe webpack configuration files
   
-  A: Describe webpack configuration files
+  A:
  
- * What is loader in webpack
+* What is loader in webpack
   
     A: Loaders are transformations that are applied on the source code of a module. webpack supports modules written in a variety of languages and preprocessors, via loaders. Loaders describe to webpack how to process non-javaScript modules and include these dependencies into your bundles. The webpack community has built loaders for a wide variety of popular languages and language processors.
 
@@ -53,17 +57,18 @@
      ```
   
     To achieve this using webpack simple configuration should be done
-  module.exports = {
+  
   
     ```javascript
+      module.exports = {
+       ...
        output: {
         filename: "[name].[hash].js"
        }
-     ```
-     In this case webpack will generate unique hash for each build and use it for all chunks. Replace `[hash]` with `[chunkhash]` to 
-     generate unique hashes for each chunk. This is useful when you dont want to re-download vendors (dependencies) file but you have 
-     changes in your application code and want to update it.
-
+       ...
+      }
+    ```
+     In this case webpack will generate unique hash for each build and use it for all chunks. Replace `[hash]` with `[chunkhash]` to generate unique hashes for each chunk. This is useful when you dont want to re-download vendors (dependencies) file but you have changes in your application code and want to update it.
 
 * Describe CommonsChunkPlugin
     
