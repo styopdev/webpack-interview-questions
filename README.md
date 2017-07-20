@@ -23,7 +23,11 @@
  
 * What is loader in webpack
   
-    A: Loaders are transformations that are applied on the source code of a module. webpack supports modules written in a variety of languages and preprocessors, via loaders. Loaders describe to webpack how to process non-javaScript modules and include these dependencies into your bundles. The webpack community has built loaders for a wide variety of popular languages and language processors.
+    A: Loaders are transformations that are applied on the source code of a module. webpack supports modules written in a variety of languages and preprocessors, via loaders. Loaders describe to webpack how to process non-javaScript modules and include these dependencies into your bundles.
+
+* Do loaders work in synchronous or asynchronous way?
+
+  A: Both. Loaders can work synchronous or asynchronous.
 
 * Describe plugin in webpack
   
@@ -68,7 +72,24 @@
        ...
       }
     ```
-     In this case webpack will generate unique hash for each build and use it for all chunks. Replace `[hash]` with `[chunkhash]` to generate unique hashes for each chunk. This is useful when you dont want to re-download vendors (dependencies) file but you have changes in your application code and want to update it.
+* What is difference between
+  
+    ```javascript
+       ...
+       output: {
+        filename: "[name].[hash].js"
+       }
+       ...
+   ```
+        and
+   ```javascript
+      ...
+       output: {
+        filename: "[name].[chunkhash].js"
+       }
+       ...
+    ```
+   A: [hash] will generate unique hash for each build and use it for all chunks. Replace `[hash]` with `[chunkhash]` to generate unique hashes for each chunk. This is useful when you dont want to re-download vendors (dependencies) file but you have changes in your application code and want to update it.
 
 * Describe CommonsChunkPlugin
     
@@ -76,4 +97,5 @@
 
 * What analyzes tools you use to inspect your webpack bundle?
     
-    A:
+    A: webpack-bundle-analyzer plugin, official webpack analyze tool, webpack visualizer, webpack chart
+    
