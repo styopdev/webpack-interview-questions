@@ -1,52 +1,82 @@
 # Webpack interview questions (EARLY DRAFT VERSION)
 
 
+## Table of Contents
+
+* [Concepts](#concepts)
+* [Config file](#config-file)
+* [Loaders](#loaders)
+* [Plugins](#plugins)
+* [Debugging](#debugging)
+* [Optimization](#optimization)
+* [Migration](#migration)
+* [Advanced-questions](#advanced-questions)
+
+
+#### Concepts
 * What is webpack?
-   
-  A: webpack is a module bundler for javascript applications. Webpack recursively builds every module in your application, then packages all of those modules into a small number of bundles.
-
-* What is module in this context?
-  
-  A:  Module is -
- 
-* What is webpack bundle?
-   
-  A:
-
+* What is the main difference between webpack and other build tools like gulp and
+* What is bundle in webpack?
 * In which environment webpack works?
 
-  A: node.js
-
+#### Config file
 * Describe webpack configuration files
-  
-  A:
- 
-* What is loader in webpack
-  
-    A: Loaders are transformations that are applied on the source code of a module. webpack supports modules written in a variety of languages and preprocessors, via loaders. Loaders describe to webpack how to process non-javaScript modules and include these dependencies into your bundles.
+* What is `entry` point?
 
+#### Loaders
+* What is loader in webpack
 * Do loaders work in synchronous or asynchronous way?
+ 
+#### Plugins
+* Describe plugin in webpack
+* What is difference between loader and plugin
+* Name plugins you think are very important and helpful
+
+#### Debugging
+
+#### Optimization
+* Briefly describe long-term caching and how to achieve it using webpack?
+* What is difference between
+  
+    ```javascript
+       ...
+       output: {
+        filename: "[name].[hash].js"
+       }
+       ...
+   ```
+        and
+   ```javascript
+      ...
+       output: {
+        filename: "[name].[chunkhash].js"
+       }
+       ...
+    ```
+* Describe CommonsChunkPlugin
+* What analyzes tools you use to inspect your webpack bundle?
+
+#### Migration
+
+#### Advanced questions
+
+
+### Answers
+
+  A: webpack is a module bundler for javascript applications. Webpack recursively builds every module in your application, then packages all of those modules into a small number of bundles.
+
+
+  A: node.js
+  
+  A: Loaders are transformations that are applied on the source code of a module. webpack supports modules written in a variety of languages and preprocessors, via loaders. Loaders describe to webpack how to process non-javaScript modules and include these dependencies into your bundles.
 
   A: Both. Loaders can work synchronous or asynchronous.
-
-* Describe plugin in webpack
   
   A: webpack plugin is -
 
-* What is difference between loader and plugin?
-  
-  A:
-
-* Name loaders you think are very important and helpful
-  
-   raw-loader, url-loader, html-loader, file-loader, style-loader, css-loader, script-loader, babel-loader, loaders for typescript, coffescript, less, sass, pug, markdown, etc.
-   
-* Name plugins you think are very important and helpful
-  
+  A: raw-loader, url-loader, html-loader, file-loader, style-loader, css-loader, script-loader, babel-loader, loaders for typescript, coffescript, less, sass, pug, markdown, etc.
   A: CommonsChunkPlugin, DefinePlugin, HtmlWebpackPlugin, ExtractTextWebpackPlugin, CompressionWebpackPlugin
 
-* Briefly describe long-term caching and how to achieve it using webpack?</summary>
-  
   A:  Browsers should cache static assets to save traffic and users time. But after each change or bugfix, browser have to download newer version of files. The most easy way to achieve this is changing file name. It could be buildId or unique hash in the end of file's name like
     
    ```javascript
@@ -72,30 +102,9 @@
        ...
       }
     ```
-* What is difference between
-  
-    ```javascript
-       ...
-       output: {
-        filename: "[name].[hash].js"
-       }
-       ...
-   ```
-        and
-   ```javascript
-      ...
-       output: {
-        filename: "[name].[chunkhash].js"
-       }
-       ...
-    ```
+
    A: [hash] will generate unique hash for each build and use it for all chunks. Replace `[hash]` with `[chunkhash]` to generate unique hashes for each chunk. This is useful when you dont want to re-download vendors (dependencies) file but you have changes in your application code and want to update it.
 
-* Describe CommonsChunkPlugin
     
-    A: 
-
-* What analyzes tools you use to inspect your webpack bundle?
-    
-    A: webpack-bundle-analyzer plugin, official webpack analyze tool, webpack visualizer, webpack chart
+ A: webpack-bundle-analyzer plugin, official webpack analyze tool, webpack visualizer, webpack chart
     
