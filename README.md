@@ -15,17 +15,20 @@
 
 #### Concepts
 * What is webpack?
-* What is the main difference between webpack and other build tools like gulp and
+* What is the main difference between webpack and other build tools like gulp or grunt?
 * What is bundle in webpack?
 * In which environment webpack works?
 
 #### Config file
-* Describe webpack configuration files
+* What is the format of webpack's config file.
 * What is `entry` point?
+* Where loaders should be defined?
+
 
 #### Loaders
 * What is loader in webpack
 * Do loaders work in synchronous or asynchronous way?
+* Is it possible to use multiple loaders in `rules` single object?
  
 #### Plugins
 * Describe plugin in webpack
@@ -68,10 +71,15 @@
 
   A: node.js
   
+###Config file
+  A: 
+  A: webpack's config file is javascript file in commonjs module pattern.
+  A: in the rules property
+  
   A: Loaders are transformations that are applied on the source code of a module. webpack supports modules written in a variety of languages and preprocessors, via loaders. Loaders describe to webpack how to process non-javaScript modules and include these dependencies into your bundles.
 
   A: Both. Loaders can work synchronous or asynchronous.
-  
+  A: Yes, its possible to chain loaders.
   A: webpack plugin is -
 
   A: raw-loader, url-loader, html-loader, file-loader, style-loader, css-loader, script-loader, babel-loader, loaders for typescript, coffescript, less, sass, pug, markdown, etc.
