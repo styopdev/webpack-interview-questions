@@ -18,14 +18,15 @@
 * What is the main difference between webpack and other build tools like gulp or grunt?
 * What is bundle in webpack?
 * In which environment webpack works?
-<br>
+
 [View Answers](#concepts-answers)
 
 #### Config file
 * What is the format of webpack's config file.
 * What is `entry` point?
 * Where loaders should be defined?
-<br>
+
+
 [View Answers](#config-file-answers)
 
 #### Loaders 
@@ -33,14 +34,16 @@
 * Do loaders work in synchronous or asynchronous way?
 * Is it possible to use multiple loaders in `rules` single object?
 * Name loaders you think are very important and helpful
-<br>
+
+
 [View Answers](#loaders-answers)
  
 #### Plugins 
 * Describe plugin in webpack
 * What is difference between loader and plugin?
 * Name plugins you think are very important and helpful
-<br>
+
+
 [View Answers](#plugins-answers)
 
 #### Debugging
@@ -66,7 +69,8 @@
     ```
 * Describe CommonsChunkPlugin
 * What analyzes tools you use to inspect your webpack bundle?
-<br>
+
+
 [View Answers](#optimization-answers)
 
 #### Migration
