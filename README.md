@@ -26,7 +26,6 @@
 * What is `entry` point?
 * Where loaders should be defined?
 
-
 [View Answers](#config-file-answers)
 
 #### Loaders 
@@ -35,14 +34,12 @@
 * Is it possible to use multiple loaders in `rules` single object?
 * Name loaders you think are very important and helpful
 
-
 [View Answers](#loaders-answers)
  
 #### Plugins 
 * Describe plugin in webpack
 * What is difference between loader and plugin?
 * Name plugins you think are very important and helpful
-
 
 [View Answers](#plugins-answers)
 
@@ -102,6 +99,8 @@
 
   A: node.js
  
+  [<- Back](#concepts)
+
 #### Config file answers
 * What is the format of webpack's config file.
   
@@ -111,7 +110,9 @@
 * Where loaders should be defined?
 
   A: in the rules property
-  
+
+  [<- Back](#config-file)
+
 #### Loaders answers
 * What is loader in webpack
   
@@ -128,15 +129,21 @@
 * Name loaders you think are very important and helpful
 
   A: raw-loader, url-loader, html-loader, file-loader, style-loader, css-loader, script-loader, babel-loader, loaders for typescript, coffescript, less, sass, pug, markdown, etc.
- 
+
+  [<- Back](#loaders)
+
 #### Plugins answers
 * Describe plugin in webpack
 * What is difference between loader and plugin
 * Name plugins you think are very important and helpful
   A: CommonsChunkPlugin, DefinePlugin, HtmlWebpackPlugin, ExtractTextWebpackPlugin, CompressionWebpackPlugin
   
+  [<- Back](#plugins)
+
 #### Debugging answers
 
+  [<- Back](#debugging)
+  
 #### Optimization answers
 * Briefly describe long-term caching and how to achieve it using webpack?
  
@@ -165,7 +172,7 @@
        ...
       }
     ```
-
+  
 * What is difference between `hash` and `chunkhash`
    
    : [hash] will generate unique hash for each build and use it for all chunks. Replace `[hash]` with `[chunkhash]` to generate unique hashes for each chunk. This is useful when you dont want to re-download vendors (dependencies) file but you have changes in your application code and want to update it.
@@ -178,6 +185,12 @@
     
  A: webpack-bundle-analyzer plugin, official webpack analyze tool, webpack visualizer, webpack chart
  
+  [<- Back](#optimization)
+   
 #### Migration answers
 
+  [<- Back](#migration)
+
 #### Advanced questions answers
+
+  [<- Back](#advanced-questions)
