@@ -11,29 +11,37 @@
 * [Optimization](#optimization)
 * [Migration](#migration)
 * [Advanced-questions](#advanced-questions)
-
+* [Answers](#answers)
 
 #### Concepts
 * What is webpack?
 * What is the main difference between webpack and other build tools like gulp or grunt?
 * What is bundle in webpack?
 * In which environment webpack works?
+<br>
+[View Answers](#concepts-answers)
 
 #### Config file
 * What is the format of webpack's config file.
 * What is `entry` point?
 * Where loaders should be defined?
+<br>
+[View Answers](#config-file-answers)
 
-#### Loaders
-* What is loader in webpack
+#### Loaders 
+* What is loader in webpack?
 * Do loaders work in synchronous or asynchronous way?
 * Is it possible to use multiple loaders in `rules` single object?
 * Name loaders you think are very important and helpful
+<br>
+[View Answers](#loaders-answers)
  
-#### Plugins
+#### Plugins 
 * Describe plugin in webpack
-* What is difference between loader and plugin
+* What is difference between loader and plugin?
 * Name plugins you think are very important and helpful
+<br>
+[View Answers](#plugins-answers)
 
 #### Debugging
 
@@ -58,11 +66,18 @@
     ```
 * Describe CommonsChunkPlugin
 * What analyzes tools you use to inspect your webpack bundle?
+<br>
+[View Answers](#optimization-answers)
 
 #### Migration
+*
+*
+*
 
 #### Advanced questions
-
+*
+*
+*
 
 ## Answers
 
@@ -73,15 +88,15 @@
   
 * What is the main difference between webpack and other build tools like gulp or grunt?
 
- A:
+  A:
 
 * What is bundle in webpack?
 
- A:
+  A:
 
 * In which environment webpack works?
 
- A: node.js
+  A: node.js
  
 #### Config file answers
 * What is the format of webpack's config file.
