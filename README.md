@@ -77,6 +77,8 @@
 * What versions of webpack support es6 modules from box?
 * What versions of webpack support json-loader from box?
 
+[View Answers](#migration-answers)
+
 #### Advanced questions
 *
 *
