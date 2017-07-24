@@ -91,7 +91,11 @@
   
 * What is the main difference between webpack and other build tools like gulp or grunt?
 
-  A:
+  A: Webpack is a module bundler, though it is quite often used instead of Gulp or Grunt task runners. This advanced tool provides developers with control over how it splits the modules, allowing them to adjust builds to particular situations and workaround solutions that don’t function properly out of the box. 
+  
+  Comparing Webpack vs Grunt, the first of those offers more flexibility and advanced functionality for modern front-end projects. It comes with a functional core and can be extended using particular loaders and plugins. Essentially it is used for bundling JavaScript modules with dependencies into files, but for complex JavaScript applications with lots of non-code assets (images, fonts, CSS, etc.) it can provide great benefits.
+  
+  Talking about Webpack vs Gulp vs Grunt performance, the two latter look into a defined path for files that match your configuration, while the Webpack analyzes the whole project. It looks through all the dependencies, processes them with loaders and produces a bundled JS file. ([source](https://da-14.com/blog/gulp-vs-grunt-vs-webpack-comparison-build-tools-task-runners))
 
 * What is bundle in webpack?
 
