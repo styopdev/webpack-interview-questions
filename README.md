@@ -71,9 +71,10 @@
 [View Answers](#optimization-answers)
 
 #### Migration
-*
-*
-*
+* Describe LoaderOptionsPlugin
+* Do you need to include OccurenceOrderPlugin in the plugins section when use webpack 2/3?
+* What versions of webpack support es6 modules from box?
+* What versions of webpack support json-loader from box?
 
 #### Advanced questions
 *
@@ -188,6 +189,42 @@
   [<- Back](#optimization)
    
 #### Migration answers
+* Describe LoaderOptionsPlugin
+  A: LoaderOptionsPlugin built especialy for migration from webpack 1 to webpack 2. Options for loaders now should be passed through this plugin's options section, e.g.
+  
+  webpack 1
+  ```javascript
+    module.exports = {
+      eslint: {
+        /* your eslint loader config */
+      }
+    }
+  ```
+  webpack 2
+  ```javascript
+    module.exports = {
+      plugins: [
+        new webpack.LoaderOptionsPlugin({
+          options: {
+            eslint: {
+              /* your eslint loader config */
+            }
+          }
+        })
+      ]
+    }
+    ```
+* Do you need to include OccurenceOrderPlugin in the plugins section when use webpack 2/3?
+  
+  A: No, it’s now included by default.
+  
+* What versions of webpack support es6 modules from box?
+
+  A: webpack 2+
+
+* What versions of webpack support json-loader from box?
+
+  A: webpack 2+
 
   [<- Back](#migration)
 
