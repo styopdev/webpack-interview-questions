@@ -18,12 +18,13 @@
 * What is the main difference between webpack and other build tools like gulp or grunt?
 * What is bundle in webpack?
 * In which environment webpack works?
+* What is `entry` point?
 
 [View Answers](#concepts-answers)
 
 #### Config file
 * What is the format of webpack's config file.
-* What is `entry` point?
+* Is it possible to have multiple entry points in singe webpack configuration file?
 * Where loaders should be defined?
 
 [View Answers](#config-file-answers)
@@ -99,6 +100,14 @@
 * In which environment webpack works?
 
   A: node.js
+  
+* What is `entry` point?
+  
+  A:
+  
+* What is dependency graph and how webpack builds it?
+
+  A:
  
   [<- Back](#concepts)
 
@@ -107,7 +116,10 @@
   
   A: webpack's config file is javascript file in commonjs module pattern.
 
-* What is `entry` point?
+* Is it possible to have multiple entry points in singe webpack configuration file?
+  
+  A: Yes
+  
 * Where loaders should be defined?
 
   A: in the rules property
