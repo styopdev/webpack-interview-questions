@@ -198,7 +198,7 @@
        ...
       }
     ```
-  
+
 ***Question:*** What is difference between `hash` and `chunkhash`
    
 ***Answer:*** [hash] will generate unique hash for each build and use it for all chunks. Replace `[hash]` with `[chunkhash]` to generate unique hashes for each chunk. This is useful when you dont want to re-download vendors (dependencies) file but you have changes in your application code and want to update it.
@@ -239,7 +239,9 @@
         })
       ]
     }
-    ```
+   ```
+
+
 ***Question:*** Do you need to include OccurenceOrderPlugin in the plugins section when use webpack 2/3?
   
 ***Answer:*** No, it’s now included by default.
