@@ -80,9 +80,9 @@
 [View Answers](#migration-answers)
 
 ### Advanced questions
-*
-*
-*
+* Describe webpack runtime and manifest 
+* Is it possible to use other (not js) language for webpack config file?
+* 
 
 ## Answers
 
@@ -154,7 +154,7 @@
 ### Plugins answers
 ***Question:*** Describe plugin in webpack
 
-***Answer:*** 
+***Answer:*** Plugins used to customize webpack’s build process in a variety of ways. A webpack plugin is a JavaScript object that has an apply property. This apply property is called by the webpack compiler, giving access to the entire compilation lifecycle. Webpack comes with a multiple built-in plugins available under `webpack.[plugin-name]`
 
 ***Question:*** What is difference between loader and plugin
 
@@ -163,7 +163,11 @@
 ***Question:*** Name plugins you think are very important and helpful
 
 ***Answer:*** CommonsChunkPlugin, DefinePlugin, HtmlWebpackPlugin, ExtractTextWebpackPlugin, CompressionWebpackPlugin
-  
+
+***Question:*** Is it possible to write your own plugin?
+
+***Answer: *** Yes, its possible to write your own plugin and use plugins written by community.
+
   [<- Back](#plugins)
 
 ### Debugging answers
@@ -205,7 +209,7 @@
    
 ***Question:*** Describe CommonsChunkPlugin
 
-***Answer:*** 
+***Answer:*** The CommonsChunkPlugin is built-in feature that creates a separate file (known as a chunk), consisting of common modules shared between multiple entry points. By separating common modules from bundles, the resulting chunked file can be loaded once initially, and stored in cache for later use. This results in pagespeed optimizations as the browser can quickly serve the shared code from cache, rather than being forced to load a larger bundle whenever a new page is visited.
  
 ***Question:*** What analyzes tools you use to inspect your webpack bundle?
     
