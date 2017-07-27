@@ -186,7 +186,7 @@
        app.js?build=1
        app.js?build=2
    ```  
-   or 
+or 
 
    ```javascript
      app.js.2a6c1fee4b5b0d2c9285.js
