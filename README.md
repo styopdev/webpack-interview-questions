@@ -1,6 +1,6 @@
 # Webpack interview questions (DRAFT VERSION)
 
-(View version with answers)[https://github.com/styopdev/webpack-interview-questions/blob/master/answers.md]
+[View version with answers](https://github.com/styopdev/webpack-interview-questions/blob/master/answers.md)
 
 ## Table of Contents
 
