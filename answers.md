@@ -1,6 +1,6 @@
-## Answers
+(View version without answers)[https://github.com/styopdev/webpack-interview-questions/blob/master/README.md]
 
-### Concepts answers
+### Concepts
 
 ***Question:*** What is webpack? 
 
@@ -29,10 +29,9 @@
 ***Question:*** What is dependency graph and how webpack builds it?
 
 ***Answer:***
- 
-  [<- Back](#concepts)
 
-### Config file answers
+
+### Config file
 ***Question:*** What is the format of webpack's config file.
   
 ***Answer:*** webpack's config file is javascript file in commonjs module pattern.
@@ -45,9 +44,8 @@
 
 ***Answer:*** in the rules property
 
-  [<- Back](#config-file)
 
-### Loaders answers
+### Loaders
 
 ***Question:*** What is loader in webpack
   
@@ -65,9 +63,7 @@
 
 ***Answer:*** raw-loader, url-loader, html-loader, file-loader, style-loader, css-loader, script-loader, babel-loader, loaders for typescript, coffescript, less, sass, pug, markdown, etc.
 
-  [<- Back](#loaders)
-
-### Plugins answers
+### Plugins
 ***Question:*** Describe plugin in webpack
 
 ***Answer:*** Plugins used to customize webpack’s build process in a variety of ways. A webpack plugin is a JavaScript object that has an apply property. This apply property is called by the webpack compiler, giving access to the entire compilation lifecycle. Webpack comes with a multiple built-in plugins available under `webpack.[plugin-name]`
@@ -84,13 +80,11 @@
 
 ***Answer: *** Yes, its possible to write your own plugin and use plugins written by community.
 
-  [<- Back](#plugins)
 
-### Debugging answers
+### Debugging
 
-  [<- Back](#debugging)
   
-### Optimization answers
+### Optimization
 
 ***Question:***  Briefly describe long-term caching and how to achieve it using webpack?
  
@@ -133,9 +127,8 @@ or
     
 ***Answer:*** webpack-bundle-analyzer plugin, official webpack analyze tool, webpack visualizer, webpack chart
  
-  [<- Back](#optimization)
    
-### Migration answers
+### Migration
 ***Question:*** Describe LoaderOptionsPlugin
 
 ***Answer:*** LoaderOptionsPlugin built especialy for migration from webpack 1 to webpack 2. Options for loaders now should be passed through this plugin's options section, e.g.
@@ -176,8 +169,5 @@ or
 
 ***Answer:*** webpack 2+
 
-  [<- Back](#migration)
 
-### Advanced questions answers
-
-  [<- Back](#advanced-questions)
+### Advanced questions
