@@ -1,4 +1,4 @@
-(View version without answers)[https://github.com/styopdev/webpack-interview-questions/blob/master/README.md]
+[View version without answers](https://github.com/styopdev/webpack-interview-questions/blob/master/README.md)
 
 ### Concepts
 
