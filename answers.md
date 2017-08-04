@@ -40,9 +40,10 @@
   
 ***Answer:*** Yes
   
-***Question:*** Where loaders should be defined?
+***Question:*** Is it possible to define multiple configurations for different environments?
 
-***Answer:*** in the rules property
+***Answer:*** Yes
+
 
 
 ### Loaders
@@ -50,7 +51,24 @@
 ***Question:*** What is loader in webpack
   
 ***Answer:*** Loaders are transformations that are applied on the source code of a module. webpack supports modules written in a variety of languages and preprocessors, via loaders. Loaders describe to webpack how to process non-javaScript modules and include these dependencies into your bundles.
-  
+
+***Question*** Where loaders should be defined?
+
+***Answer*** in the config's object's rules property
+
+***Question*** Explain this code
+
+    ```javascript
+    {
+      test: /\.scss$/,
+      loaders: ['style', 'css?sourceMap', 'sass-loader?sourceMap', 'postcss-loader'],
+      exclude: /node_modules/
+    }
+    ```
+    
+***Answer*** 
+
+
 ***Question:*** Do loaders work in synchronous or asynchronous way?
   
 ***Answer:*** Both. Loaders can work synchronous or asynchronous.
@@ -72,13 +90,21 @@
 
 ***Answer:*** 
 
+***Question:*** What is advantage of CompressionPlugin?
+
+***Answer:*** 
+
+***Question:*** How to move some data (e.g css code) from bundle to separate file in webpack?
+
+***Answer:*** 
+
 ***Question:*** Name plugins you think are very important and helpful
 
 ***Answer:*** CommonsChunkPlugin, DefinePlugin, HtmlWebpackPlugin, ExtractTextWebpackPlugin, CompressionWebpackPlugin
 
 ***Question:*** Is it possible to write your own plugin?
 
-***Answer: *** Yes, its possible to write your own plugin and use plugins written by community.
+***Answer:*** Yes, its possible to write your own plugin and use plugins written by community.
 
 
 ### Debugging
@@ -122,7 +148,20 @@ or
 ***Question:*** Describe CommonsChunkPlugin
 
 ***Answer:*** The CommonsChunkPlugin is built-in feature that creates a separate file (known as a chunk), consisting of common modules shared between multiple entry points. By separating common modules from bundles, the resulting chunked file can be loaded once initially, and stored in cache for later use. This results in pagespeed optimizations as the browser can quickly serve the shared code from cache, rather than being forced to load a larger bundle whenever a new page is visited.
- 
+
+***Question:*** Explain this code
+
+ ```javascript
+    new webpack.optimize.CommonsChunkPlugin({
+      name: 'common',
+      filename: 'common.js',
+      chunks: ['home', 'dashboard']
+    })
+  ```
+***Question:*** Which built-in plugin should be used for code minification?
+
+***Answer:*** 
+
 ***Question:*** What analyzes tools you use to inspect your webpack bundle?
     
 ***Answer:*** webpack-bundle-analyzer plugin, official webpack analyze tool, webpack visualizer, webpack chart
@@ -171,3 +210,23 @@ or
 
 
 ### Advanced questions
+
+***Question:*** Describe webpack runtime and manifest.
+
+***Answer:*** 
+
+***Question:*** Is it possible to use other (not js) language for webpack config file?
+
+***Answer:*** 
+
+***Question:*** Is it possible to have different configurations' files for different environments?
+
+***Answer:*** 
+
+***Question:*** Describe tree shaking mechanism.
+
+***Answer:*** 
+
+***Question:*** What is difference between tree shaking and dead code elumination.
+
+***Answer:*** 
