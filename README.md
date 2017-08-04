@@ -1,4 +1,4 @@
-# Webpack interview questions (DRAFT VERSION)
+# Webpack interview questions
 
 [View version with answers](https://github.com/styopdev/webpack-interview-questions/blob/master/answers.md)
 
