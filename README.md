@@ -48,7 +48,7 @@
 * What is advantage of CompressionPlugin?
 * How to move some data (e.g css code) from bundle to separate file in webpack?
 * Name plugins you think are very important and helpful.
-
+* Is it possible to write your own plugin?
 
 ### Debugging
 
