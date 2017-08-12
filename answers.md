@@ -88,15 +88,16 @@
 
 ***Question:*** What is difference between loader and plugin
 
-***Answer:*** 
+***Answer:*** https://stackoverflow.com/a/38281240/3283209
 
 ***Question:*** What is advantage of CompressionPlugin?
 
-***Answer:*** 
+***Answer:*** CompressionPlugin builds gzip-ed version of bundles. Its possible to simply add server side compression e.g using nginx or expres compression plugin. Server-side compression is not recommended because it addes load on CPU and increases response time.
 
 ***Question:*** How to move some data (e.g css code) from bundle to separate file in webpack?
 
-***Answer:*** 
+***Answer:*** using ExtractTextWebpackPlugin. It moves all the required *.css modules in entry chunks into a separate CSS file. So your styles are no longer inlined into the JS bundle, but in a separate CSS file (styles.css). If your total stylesheet volume is big, it will be faster because the CSS bundle is loaded in parallel to the JS bundle. 
+https://github.com/webpack-contrib/extract-text-webpack-plugin
 
 ***Question:*** Name plugins you think are very important and helpful
 
