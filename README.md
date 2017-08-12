@@ -97,3 +97,4 @@
 * Is it possible to have different configurations' files for different environments?
 * Describe tree shaking mechanism.
 * What is difference between tree shaking and dead code elumination.
+* Describe scope hoisting in webpack 3.
