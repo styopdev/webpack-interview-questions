@@ -81,6 +81,13 @@
     })
   ```
 * Which built-in plugin should be used for code minification?
+* Explain this code
+ ```javascript
+    new webpack.ContextReplacementPlugin({
+      /moment[\/\\]locale/,
+      /(en-gb|en-us)\.js/
+    })
+  ```
 * What analyzes tools you use for webpack bundle's inspection?
 
 
