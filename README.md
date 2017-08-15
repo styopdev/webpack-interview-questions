@@ -8,7 +8,7 @@
 * [Config file](#config-file)
 * [Loaders](#loaders)
 * [Plugins](#plugins)
-* [Debugging](#debugging)
+* [Development](#development)
 * [Optimization](#optimization)
 * [Migration](#migration)
 * [Advanced-questions](#advanced-questions)
@@ -50,7 +50,13 @@
 * Name plugins you think are very important and helpful.
 * Is it possible to write your own plugin?
 
-### Debugging
+### Development
+* What is advantage of webpack-dev-derver over simple `http` server or nginx?
+* On which platform webpack-dev-server is developed?
+* What is Hot-Modules-Replacement?
+* How to enable source maps in webpack bundles?
+* How to automatically build and update bundles in browser after a change in source code?
+
 
 ### Optimization
 * Briefly describe long-term caching and how to achieve it using webpack?
