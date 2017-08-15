@@ -24,11 +24,11 @@
   
 ***Question:*** What is `entry` point?
 
-***Answer:***
+***Answer:*** The entry object is where webpack looks to start building the bundle, at this point the application starts executing.
   
 ***Question:*** What is dependency graph and how webpack builds it?
 
-***Answer:***
+***Answer:*** Any time one file depends on another, webpack treats this as a dependency. Starting from entry point(s), webpack recursively builds a dependency graph that includes every module your application needs, using `import` and `require` statements, then packages all of those modules into bundle(s).
 
 
 ### Config file
