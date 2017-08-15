@@ -63,7 +63,7 @@
        }
        ...
    ```
-        and
+    and
    ```javascript
       ...
        output: {
