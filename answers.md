@@ -58,13 +58,13 @@
 
 ***Question*** Explain this code
 
-    ```javascript
+```javascript
     {
       test: /\.scss$/,
       loaders: ['style', 'css?sourceMap', 'sass-loader?sourceMap', 'postcss-loader'],
       exclude: /node_modules/
     }
-    ```
+```
     
 ***Answer*** 
 
@@ -108,9 +108,29 @@ https://github.com/webpack-contrib/extract-text-webpack-plugin
 ***Answer:*** Yes, its possible to write your own plugin and use plugins written by community.
 
 
-### Debugging
+### Development
 
-  
+****Questions*** What is advantage of webpack-dev-derver over simple `http` server or nginx?
+
+***Answer:***
+
+****Questions*** On which platform webpack-dev-server is developed?
+
+***Answer:*** webpack-dev-server is express (node.js) application.
+
+****Questions*** What is Hot-Modules-Replacement?
+
+***Answer:*** Hot-Modules-Replacement(HMR) is webpack feature which allows to update modules in application without page reload. HMR can be used as an advanced replacement for livereload.
+
+****Questions*** How to enable source maps in webpack bundles?
+
+***Answer:*** 
+
+****Questions*** How to automatically build and update bundles in browser after a change in source code?
+
+***Answer:*** Using `watch: true` and `devServer: { hot: true }` options together.
+
+
 ### Optimization
 
 ***Question:***  Briefly describe long-term caching and how to achieve it using webpack?
@@ -158,10 +178,12 @@ or
       filename: 'common.js',
       chunks: ['home', 'dashboard']
     })
-  ```
+ ```
+***Answer:*** This code creates separate file: `common.js` containing common modules from `home` and `dashboard` chunks.  
+
 ***Question:*** Which built-in plugin should be used for code minification?
 
-***Answer:*** 
+***Answer:*** UglifyJS plugin.
 
 ***Question:*** What analyzes tools you use to inspect your webpack bundle?
     
@@ -218,16 +240,16 @@ or
 
 ***Question:*** Is it possible to use other (not js) language for webpack config file?
 
-***Answer:*** 
+***Answer:*** Yes, webpack accepts configuration files written in multiple programming and data languages, such as typescript, coffeescript, babel and jsx. The list of supported file extensions can be found [here](https://github.com/js-cli/js-interpret).
 
 ***Question:*** Is it possible to have different configurations' files for different environments?
 
-***Answer:*** 
+***Answer:*** Yes, read more [here](https://aishwaryavaishno.wordpress.com/2017/04/17/webpack-configuration-for-multiple-environments/)
 
 ***Question:*** Describe tree shaking mechanism.
 
-***Answer:*** 
+***Answer:*** https://webpack.js.org/guides/tree-shaking/
 
 ***Question:*** What is difference between tree shaking and dead code elumination.
 
-***Answer:*** 
+***Answer:*** https://medium.com/@Rich_Harris/tree-shaking-versus-dead-code-elimination-d3765df85c80
