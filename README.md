@@ -54,6 +54,7 @@
 * What is advantage of webpack-dev-derver over simple `http` server or nginx?
 * On which platform webpack-dev-server is developed?
 * What is Hot-Modules-Replacement?
+* Does it make sense to use Hot-Modules-Replacement in production environment?
 * How to enable source maps in webpack bundles?
 * How to automatically build and update bundles in browser after a change in source code?
 
