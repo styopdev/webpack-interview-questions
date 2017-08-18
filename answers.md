@@ -63,11 +63,11 @@
   
 ***Answer:*** Loaders are transformations that are applied on the source code of a module. webpack supports modules written in a variety of languages and preprocessors, via loaders. Loaders describe to webpack how to process non-javaScript modules and include these dependencies into your bundles.
 
-***Question*** Where loaders should be defined?
+***Question:*** Where loaders should be defined?
 
-***Answer*** in the config's object's rules property
+***Answer:*** in the config's object's rules property
 
-***Question*** Explain this code
+***Question:*** Explain this code
 
 ```javascript
     {
@@ -77,7 +77,7 @@
     }
 ```
     
-***Answer*** 
+***Answer:*** 
 
 ***Question:*** Do loaders work in synchronous or asynchronous way?
   
