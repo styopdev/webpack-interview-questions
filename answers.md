@@ -1,5 +1,16 @@
 [View version without answers](https://github.com/styopdev/webpack-interview-questions/blob/master/README.md)
 
+## Table of Contents
+
+* [Concepts](#concepts)
+* [Config file](#config-file)
+* [Loaders](#loaders)
+* [Plugins](#plugins)
+* [Development](#development)
+* [Optimization](#optimization)
+* [Migration](#migration)
+* [Advanced-questions](#advanced-questions)
+
 ### Concepts
 
 ***Question:*** What is webpack? 
@@ -61,13 +72,12 @@
 ```javascript
     {
       test: /\.scss$/,
-      loaders: ['style', 'css?sourceMap', 'sass-loader?sourceMap', 'postcss-loader'],
+      loaders: ['style-loader', 'css-loader?sourceMap', 'sass-loader?sourceMap', 'postcss-loader'],
       exclude: /node_modules/
     }
 ```
     
 ***Answer*** 
-
 
 ***Question:*** Do loaders work in synchronous or asynchronous way?
   
@@ -82,6 +92,7 @@
 ***Answer:*** raw-loader, url-loader, html-loader, file-loader, style-loader, css-loader, script-loader, babel-loader, loaders for typescript, coffescript, less, sass, pug, markdown, etc.
 
 ### Plugins
+
 ***Question:*** Describe plugin in webpack
 
 ***Answer:*** Plugins used to customize webpack’s build process in a variety of ways. A webpack plugin is a JavaScript object that has an apply property. This apply property is called by the webpack compiler, giving access to the entire compilation lifecycle. Webpack comes with a multiple built-in plugins available under `webpack.[plugin-name]`
@@ -110,23 +121,23 @@ https://github.com/webpack-contrib/extract-text-webpack-plugin
 
 ### Development
 
-****Questions*** What is advantage of webpack-dev-derver over simple `http` server or nginx?
+***Question*** What is advantage of webpack-dev-derver over simple `http` server or nginx?
 
 ***Answer:***
 
-****Questions*** On which platform webpack-dev-server is developed?
+***Question:*** On which platform webpack-dev-server is developed?
 
 ***Answer:*** webpack-dev-server is express (node.js) application.
 
-****Questions*** What is Hot-Modules-Replacement?
+***Question:*** What is Hot-Modules-Replacement?
 
 ***Answer:*** Hot-Modules-Replacement(HMR) is webpack feature which allows to update modules in application without page reload. HMR can be used as an advanced replacement for livereload.
 
-****Questions*** How to enable source maps in webpack bundles?
+***Question:*** How to enable source maps in webpack bundles?
 
-***Answer:*** 
+***Answer:*** Using devtool: 'source-map' (there are various other configurations for source maps, view full list [here](https://webpack.js.org/configuration/devtool/#devtool))
 
-****Questions*** How to automatically build and update bundles in browser after a change in source code?
+***Question:*** How to automatically build and update bundles in browser after a change in source code?
 
 ***Answer:*** Using `watch: true` and `devServer: { hot: true }` options together.
 
@@ -236,7 +247,7 @@ or
 
 ***Question:*** Describe webpack runtime and manifest.
 
-***Answer:*** 
+***Answer:*** https://webpack.js.org/concepts/manifest/
 
 ***Question:*** Is it possible to use other (not js) language for webpack config file?
 
