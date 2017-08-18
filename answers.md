@@ -41,6 +41,9 @@
 
 ***Answer:*** Any time one file depends on another, webpack treats this as a dependency. Starting from entry point(s), webpack recursively builds a dependency graph that includes every module your application needs, using `import` and `require` statements, then packages all of those modules into bundle(s).
 
+***Question*** Which modules design patterns webpack supports out of the box?
+
+***Answer*** `common.js`, `amd` and es6 (since webpack 2).
 
 ### Config file
 ***Question:*** What is the format of webpack's config file.
