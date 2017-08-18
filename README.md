@@ -20,6 +20,7 @@
 * In which environment webpack works?
 * What is `entry` point?
 * What is dependency graph and how webpack build it?
+* Which modules design patterns webpack supports out of the box?
 
 ### Config file
 * What is the format of webpack's config file.
