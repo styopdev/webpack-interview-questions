@@ -15,11 +15,11 @@
 
 ***Question:*** What is webpack? 
 
-***Answer:*** webpack is a module bundler for javascript applications. Webpack recursively builds every module in your application, then packages all of those modules into a small number of bundles.
+***Answer:*** webpack is a module bundler for javascript applications. Webpack recursively builds every module in your application, then packs all those modules into a small number of bundles.
   
 ***Question:*** What is the main difference between webpack and other build tools like gulp or grunt?
 
-***Answer:*** Webpack is a module bundler, though it is quite often used instead of Gulp or Grunt task runners. This advanced tool provides developers with control over how it splits the modules, allowing them to adjust builds to particular situations and workaround solutions that don’t function properly out of the box. 
+***Answer:*** Webpack is a module bundler, though it is quite often used instead of Gulp or Grunt task runners. This advanced tool provides developers with control of spliting the modules, allowing them to adjust builds to particular situations and workaround solutions that don’t function properly out of the box. 
   
   Comparing Webpack vs Grunt, the first of those offers more flexibility and advanced functionality for modern front-end projects. It comes with a functional core and can be extended using particular loaders and plugins. Essentially it is used for bundling JavaScript modules with dependencies into files, but for complex JavaScript applications with lots of non-code assets (images, fonts, CSS, etc.) it can provide great benefits.
   
@@ -124,7 +124,7 @@ https://github.com/webpack-contrib/extract-text-webpack-plugin
 
 ### Development
 
-***Question*** What is advantage of webpack-dev-derver over simple `http` server or nginx?
+***Question*** What is advantage of webpack-dev-server over simple `http` server or nginx?
 
 ***Answer:***
 
@@ -193,13 +193,13 @@ or
       chunks: ['home', 'dashboard']
     })
  ```
-***Answer:*** This code creates separate file: `common.js` containing common modules from `home` and `dashboard` chunks.  
+***Answer:*** This code creates separate file: `common.js` which contains common modules from home and dashboard chunks.  
 
 ***Question:*** Which built-in plugin should be used for code minification?
 
 ***Answer:*** UglifyJS plugin.
 
-***Question:*** What analyzes tools you use to inspect your webpack bundle?
+***Question:*** What analyzing tools you use to inspect your webpack bundle?
     
 ***Answer:*** webpack-bundle-analyzer plugin, official webpack analyze tool, webpack visualizer, webpack chart
  
