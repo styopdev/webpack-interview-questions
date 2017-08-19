@@ -52,7 +52,7 @@
 * Is it possible to write your own plugin?
 
 ### Development
-* What is advantage of webpack-dev-derver over simple `http` server or nginx?
+* What is advantage of webpack-dev-server over simple `http` server or nginx?
 * On which platform webpack-dev-server is developed?
 * What is Hot-Modules-Replacement?
 * Does it make sense to use Hot-Modules-Replacement in production environment?
@@ -108,7 +108,7 @@
 
 ### Advanced questions
 * Describe webpack runtime and manifest.
-* Is it possible to use other (not js) language for webpack config file?
+* Is it possible to use other language (except javascript) for webpack config file?
 * Is it possible to have different configurations' files for different environments?
 * Describe tree shaking mechanism.
 * What is difference between tree shaking and dead code elumination.
