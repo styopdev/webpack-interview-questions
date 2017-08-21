@@ -252,7 +252,7 @@ or
 
 ***Answer:*** https://webpack.js.org/concepts/manifest/
 
-***Question:*** Is it possible to use other (not js) language for webpack config file?
+***Question:*** Is it possible to use other language (except javascript) for webpack config file?
 
 ***Answer:*** Yes, webpack accepts configuration files written in multiple programming and data languages, such as typescript, coffeescript, babel and jsx. The list of supported file extensions can be found [here](https://github.com/js-cli/js-interpret).
 
