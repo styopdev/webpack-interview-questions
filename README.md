@@ -30,6 +30,7 @@
 ### Loaders 
 * What is loader in webpack?
 * Where loaders should be defined?
+* What is the difference between a rule and a loader?
 * Explain this code
     ```javascript
     {
@@ -113,3 +114,10 @@
 * Describe tree shaking mechanism.
 * What is difference between tree shaking and dead code elumination.
 * Describe scope hoisting in webpack 3.
+* What is Tapable and how does it relate to webpack plugins?
+### Internal API Questions (very advanced)
+* What is the difference between Compiler and Watching classes?
+* Describe the purpose of Compiler
+* Describe the purpose of Compililation
+* Describe DependenciesBlock class. Why is it so important.
+* Describe the relationship between the Parser, Dependency, Dependency Factory, and Dependency Templates
