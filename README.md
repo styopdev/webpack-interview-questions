@@ -11,7 +11,8 @@
 * [Development](#development)
 * [Optimization](#optimization)
 * [Migration](#migration)
-* [Advanced-questions](#advanced-questions)
+* [Advanced questions](#advanced-questions)
+* [Internal API Questions (very advanced)](#internal-api-questions-very-advanced)
 
 ### Concepts
 * What is webpack?
@@ -26,6 +27,7 @@
 * What is the format of webpack's config file.
 * Is it possible to have multiple entry points in single webpack configuration file?
 * Is it possible to define multiple configurations for different environments?
+* How to generate webpack config file automatically?
 
 ### Loaders 
 * What is loader in webpack?
@@ -35,7 +37,7 @@
     ```javascript
     {
       test: /\.scss$/,
-      loaders: ['style', 'css?sourceMap', 'sass-loader?sourceMap', 'postcss-loader'],
+      loaders: ['style-loader', 'css-loader?sourceMap', 'sass-loader?sourceMap', 'postcss-loader'],
       exclude: /node_modules/
     }
     ```
@@ -97,6 +99,7 @@
       /(en-gb|en-us)\.js/
     })
   ```
+* How to achieve lazy loading in webpack?
 * What analyzes tools you use for webpack bundle's inspection?
 
 
@@ -105,6 +108,7 @@
 * Do you need to include OccurenceOrderPlugin in the plugins section when use webpack 2/3?
 * Which versions of webpack support es6 modules from box?
 * Which versions of webpack support json-loader from box?
+* Which versions of webpack support code splitting?
 
 
 ### Advanced questions
@@ -115,6 +119,7 @@
 * What is difference between tree shaking and dead code elumination.
 * Describe scope hoisting in webpack 3.
 * What is Tapable and how does it relate to webpack plugins?
+
 ### Internal API Questions (very advanced)
 * What is the difference between Compiler and Watching classes?
 * Describe the purpose of Compiler
