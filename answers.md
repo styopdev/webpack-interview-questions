@@ -13,16 +13,16 @@
 
 ### Concepts
 
-***Question:*** What is webpack? 
+***Question:*** What is webpack?
 
 ***Answer:*** webpack is a module bundler for javascript applications. Webpack recursively builds every module in your application, then packs all those modules into a small number of bundles.
-  
+
 ***Question:*** What is the main difference between webpack and other build tools like gulp or grunt?
 
-***Answer:*** Webpack is a module bundler, though it is quite often used instead of Gulp or Grunt task runners. This advanced tool provides developers with control of spliting the modules, allowing them to adjust builds to particular situations and workaround solutions that don’t function properly out of the box. 
-  
+***Answer:*** Webpack is a module bundler, though it is quite often used instead of Gulp or Grunt task runners. This advanced tool provides developers with control of spliting the modules, allowing them to adjust builds to particular situations and workaround solutions that don’t function properly out of the box.
+
   Comparing Webpack vs Grunt, the first of those offers more flexibility and advanced functionality for modern front-end projects. It comes with a functional core and can be extended using particular loaders and plugins. Essentially it is used for bundling JavaScript modules with dependencies into files, but for complex JavaScript applications with lots of non-code assets (images, fonts, CSS, etc.) it can provide great benefits.
-  
+
   Talking about Webpack vs Gulp vs Grunt performance, the two latter look into a defined path for files that match your configuration, while the Webpack analyzes the whole project. It looks through all the dependencies, processes them with loaders and produces a bundled JS file. ([source](https://da-14.com/blog/gulp-vs-grunt-vs-webpack-comparison-build-tools-task-runners))
 
 ***Question:*** What is bundle in webpack?
@@ -124,9 +124,9 @@ https://github.com/webpack-contrib/extract-text-webpack-plugin
 
 ### Development
 
-***Question*** What is advantage of webpack-dev-server over simple `http` server or nginx?
+***Question*** What is advantage of webpack-dev-server over simple `http` server or `nginx`?
 
-***Answer:***
+***Answer:*** webpack-dev-server simplifies development process due to integrated fast in-memory access to the webpack assets and hot-modules-replacement features.
 
 ***Question:*** On which platform webpack-dev-server is developed?
 
@@ -238,16 +238,20 @@ or
 
 
 ***Question:*** Do you need to include OccurenceOrderPlugin in the plugins section when use webpack 2/3?
-  
+
 ***Answer:*** No, it’s now included by default.
-  
-***Question:*** What versions of webpack support es6 modules from box?
+
+***Question:*** Which versions of webpack support es6 modules from box?
 
 ***Answer:*** webpack 2+
 
-***Question:*** What versions of webpack support json-loader from box?
+***Question:*** Which versions of webpack support json-loader from box?
 
 ***Answer:*** webpack 2+
+
+***Question:*** Which versions of webpack support code splitting?
+
+***Answer:*** All versions
 
 
 ### Advanced questions

@@ -2,6 +2,8 @@
 
 [View version with answers](https://github.com/styopdev/webpack-interview-questions/blob/master/answers.md)
 
+Big thanks to [TheLarkInn](https://github.com/TheLarkInn) and [johannesMatevosyan](https://github.com/johannesMatevosyan) for contribution.
+
 ## Table of Contents
 
 * [Concepts](#concepts)
@@ -101,7 +103,7 @@
   ```
 * How to achieve lazy loading in webpack?
 * Why OccurenceOrderPlugin is the part of webpack optimization. What it has to do with module ids and topological sorting?
-* What analyzes tools you use for webpack bundle's inspection?
+* What analyzing tools you use for webpack bundle's inspection?
 
 
 ### Migration
