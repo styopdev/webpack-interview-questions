@@ -272,6 +272,6 @@ or
 
 ***Answer:*** https://webpack.js.org/guides/tree-shaking/
 
-***Question:*** What is difference between tree shaking and dead code elumination.
+***Question:*** What is difference between tree shaking and dead code elimination.
 
 ***Answer:*** https://medium.com/@Rich_Harris/tree-shaking-versus-dead-code-elimination-d3765df85c80

@@ -119,7 +119,7 @@ Big thanks to [TheLarkInn](https://github.com/TheLarkInn) and [johannesMatevosya
 * Is it possible to use other language (except javascript) for webpack config file?
 * Is it possible to have different configurations' files for different environments?
 * Describe tree shaking mechanism.
-* What is difference between tree shaking and dead code elumination.
+* What is difference between tree shaking and dead code elimination.
 * Describe scope hoisting in webpack 3.
 * What is Tapable and how does it relate to webpack plugins?
 
