@@ -63,12 +63,13 @@ Big thanks to [TheLarkInn](https://github.com/TheLarkInn) and [johannesMatevosya
 * Does it make sense to use Hot-Modules-Replacement in production environment?
 * How to enable source maps in webpack bundles?
 * How to automatically build and update bundles in browser after a change in source code?
+* What is `parallel-webpack` and how does it affect webpack's build process?
 
 
 ### Optimization
 * Briefly describe long-term caching and how to achieve it using webpack?
 * What is difference between
-  
+
     ```javascript
        ...
        output: {

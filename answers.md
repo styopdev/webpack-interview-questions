@@ -144,27 +144,31 @@ https://github.com/webpack-contrib/extract-text-webpack-plugin
 
 ***Answer:*** Using `watch: true` and `devServer: { hot: true }` options together.
 
+***Question:*** What is parallel-webpack and how does it affect webpack's build process
+
+***Answer:*** [parallel-webpack](https://github.com/trivago/parallel-webpack) useful for webpack configurations with multiple entry points. It allows to run multiple webpack builds in parallel, spreading the work across your processors and thus helping to significantly speed up build.
+
 
 ### Optimization
 
 ***Question:***  Briefly describe long-term caching and how to achieve it using webpack?
- 
+
 ***Answer:*** Browsers should cache static assets to save traffic and users time. But after each change or bugfix, browser have to download newer version of files. The most easy way to achieve this is changing file name. It could be buildId or unique hash in the end of file's name like
-    
+
    ```javascript
        app.js?build=1
        app.js?build=2
    ```  
-or 
+or
 
    ```javascript
      app.js.2a6c1fee4b5b0d2c9285.js
      app.js.70b594fe8b07bcedaa98.js
    ```
-  
+
  To achieve this using webpack simple configuration should be done
-  
-  
+
+
    ```javascript
       module.exports = {
        ...
