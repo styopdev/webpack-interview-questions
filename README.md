@@ -19,21 +19,21 @@ Big thanks to [TheLarkInn](https://github.com/TheLarkInn) and [johannesMatevosya
 ### Concepts
 * What is webpack?
 * What is the main difference between webpack and other build tools like gulp or grunt?
-* What is bundle in webpack?
-* In which environment webpack works?
-* What is `entry` point?
-* What is dependency graph and how webpack build it?
+* What is a bundle in webpack?
+* In which environment does webpack work?
+* What is an `entry` point?
+* What is a dependency graph and how does webpack build it?
 * Which modules design patterns webpack supports out of the box?
 
 ### Config file
-* What is the format of webpack's config file.
-* Is it possible to have multiple entry points in single webpack configuration file?
+* What is the format of webpack's config file?
+* Is it possible to have multiple entry points in a single webpack configuration file?
 * Is it possible to define multiple configurations for different environments?
-* How to generate webpack config file automatically?
+* How can we generate webpack config file automatically?
 
 ### Loaders 
-* What is loader in webpack?
-* Where loaders should be defined?
+* What is a loader in webpack?
+* Where should loaders be defined?
 * What is the difference between a rule and a loader?
 * Explain this code
     ```javascript
@@ -43,26 +43,26 @@ Big thanks to [TheLarkInn](https://github.com/TheLarkInn) and [johannesMatevosya
       exclude: /node_modules/
     }
     ```
-* Do loaders work in synchronous or asynchronous way?
-* Is it possible to use multiple loaders in `rules` single object?
+* Do loaders work in a synchronous or an asynchronous way?
+* Is it possible to use multiple loaders in the `rules` single object?
 * Name loaders that you think are very important and helpful.
 
  
 ### Plugins 
-* Describe plugin in webpack.
-* What is difference between loader and plugin?
-* What is advantage of CompressionPlugin?
-* How to move some data (e.g css code) from bundle to separate file in webpack?
-* Name plugins you think are very important and helpful.
+* Describe a plugin in webpack.
+* What is the difference between a loader and a plugin?
+* What is the advantage of CompressionPlugin?
+* How can you move some data (e.g css code) from a bundle to a separate file in webpack?
+* Name some plugins you think are important and helpful.
 * Is it possible to write your own plugin?
 
 ### Development
-* What is advantage of webpack-dev-server over simple `http` server or nginx?
-* On which platform webpack-dev-server is developed?
+* What are some advantages of using webpack-dev-server over simple `http` server or nginx?
+* On which platform is webpack-dev-server developed?
 * What is Hot-Modules-Replacement?
 * Does it make sense to use Hot-Modules-Replacement in production environment?
 * How to enable source maps in webpack bundles?
-* How to automatically build and update bundles in browser after a change in source code?
+* How to automatically build and update bundles in the browser after a change in source code?
 * What is `parallel-webpack` and how does it affect webpack's build process?
 
 
@@ -85,7 +85,7 @@ Big thanks to [TheLarkInn](https://github.com/TheLarkInn) and [johannesMatevosya
        }
        ...
     ```
-* Describe CommonsChunkPlugin.
+* Describe the CommonsChunkPlugin.
 * Explain this code
  ```javascript
     new webpack.optimize.CommonsChunkPlugin({
@@ -103,24 +103,24 @@ Big thanks to [TheLarkInn](https://github.com/TheLarkInn) and [johannesMatevosya
     })
   ```
 * How to achieve lazy loading in webpack?
-* Why OccurenceOrderPlugin is the part of webpack optimization. What it has to do with module ids and topological sorting?
-* What analyzing tools you use for webpack bundle's inspection?
+* Why is OccurenceOrderPlugin part of webpack optimization? What it has to do with module ids and topological sorting?
+* What analysis tools do you use for webpack bundle's inspection?
 
 
 ### Migration
-* Describe LoaderOptionsPlugin.
+* Describe the LoaderOptionsPlugin.
 * Do you need to include OccurenceOrderPlugin in the plugins section when use webpack 2/3?
-* Which versions of webpack support es6 modules from box?
-* Which versions of webpack support json-loader from box?
-* Which versions of webpack support code splitting?
+* Which version(s) of webpack support es6 modules out the box?
+* Which version(s) of webpack support json-loader out the box?
+* Which version(s) of webpack support code splitting?
 
 
 ### Advanced questions
-* Describe webpack runtime and manifest.
-* Is it possible to use other language (except javascript) for webpack config file?
-* Is it possible to have different configurations' files for different environments?
-* Describe tree shaking mechanism.
-* What is difference between tree shaking and dead code elimination.
+* Describe the webpack runtime and manifest.
+* Is it possible to use other languages (except javascript) for the webpack config file?
+* Is it possible to have different configuration files for different environments?
+* Describe the tree shaking mechanism.
+* What is the difference between tree shaking and dead code elimination.
 * Describe scope hoisting in webpack 3.
 * What is Tapable and how does it relate to webpack plugins?
 
@@ -128,5 +128,5 @@ Big thanks to [TheLarkInn](https://github.com/TheLarkInn) and [johannesMatevosya
 * What is the difference between Compiler and Watching classes?
 * Describe the purpose of Compiler
 * Describe the purpose of Compililation
-* Describe DependenciesBlock class. Why is it so important.
+* Describe DependenciesBlock class. Why is it so important?
 * Describe the relationship between the Parser, Dependency, Dependency Factory, and Dependency Templates
