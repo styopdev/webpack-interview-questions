@@ -2,7 +2,7 @@
 
 [View version with answers](https://github.com/styopdev/webpack-interview-questions/blob/master/answers.md)
 
-Big thanks to [TheLarkInn](https://github.com/TheLarkInn) and [johannesMatevosyan](https://github.com/johannesMatevosyan) for contribution.
+Big thanks to [TheLarkInn](https://github.com/TheLarkInn), [raybooysen](https://github.com/raybooysen) and [johannesMatevosyan](https://github.com/johannesMatevosyan) for contribution.
 
 ## Table of Contents
 
