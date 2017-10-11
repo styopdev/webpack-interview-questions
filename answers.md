@@ -25,19 +25,19 @@
 
   Talking about Webpack vs Gulp vs Grunt performance, the two latter look into a defined path for files that match your configuration, while the Webpack analyzes the whole project. It looks through all the dependencies, processes them with loaders and produces a bundled JS file. ([source](https://da-14.com/blog/gulp-vs-grunt-vs-webpack-comparison-build-tools-task-runners))
 
-***Question:*** What is bundle in webpack?
+***Question:*** What is a bundle in webpack?
 
 ***Answer:***
 
-***Question:*** In which environment webpack works?
+***Question:*** In which environment does webpack work?
 
 ***Answer:*** node.js
   
-***Question:*** What is `entry` point?
+***Question:*** What is an `entry` point?
 
 ***Answer:*** The entry object is where webpack looks to start building the bundle, at this point the application starts executing.
   
-***Question:*** What is dependency graph and how webpack builds it?
+***Question:*** What is a dependency graph and how does webpack build it?
 
 ***Answer:*** Any time one file depends on another, webpack treats this as a dependency. Starting from entry point(s), webpack recursively builds a dependency graph that includes every module your application needs, using `import` and `require` statements, then packages all of those modules into bundle(s).
 
@@ -46,11 +46,11 @@
 ***Answer*** `common.js`, `amd` and es6 (since webpack 2).
 
 ### Config file
-***Question:*** What is the format of webpack's config file.
+***Question:*** What is the format of webpack's config file?
   
 ***Answer:*** webpack's config file is javascript file in commonjs module pattern.
 
-***Question:*** Is it possible to have multiple entry points in singe webpack configuration file?
+***Question:*** Is it possible to have multiple entry points in a singe webpack configuration file?
   
 ***Answer:*** Yes
   
@@ -58,15 +58,18 @@
 
 ***Answer:*** Yes
 
+***Question:*** How can we generate webpack config file automatically?
+
+***Answer:*** Using webpack-cli init
 
 
 ### Loaders
 
-***Question:*** What is loader in webpack
+***Question:*** What is a loader in webpack
   
 ***Answer:*** Loaders are transformations that are applied on the source code of a module. webpack supports modules written in a variety of languages and preprocessors, via loaders. Loaders describe to webpack how to process non-javaScript modules and include these dependencies into your bundles.
 
-***Question:*** Where loaders should be defined?
+***Question:*** Where should loaders be defined?
 
 ***Answer:*** in the config's object's rules property
 
@@ -82,11 +85,11 @@
     
 ***Answer:*** 
 
-***Question:*** Do loaders work in synchronous or asynchronous way?
+***Question:*** Do loaders work in a synchronous or an asynchronous way?
   
 ***Answer:*** Both. Loaders can work synchronous or asynchronous.
 
-***Question:*** Is it possible to use multiple loaders in `rules` single object?
+***Question:*** Is it possible to use multiple loaders in the `rules` single object?
   
 ***Answer:*** Yes, its possible to chain loaders.
 
@@ -96,24 +99,24 @@
 
 ### Plugins
 
-***Question:*** Describe plugin in webpack
+***Question:*** Describe a plugin in webpack
 
 ***Answer:*** Plugins used to customize webpack’s build process in a variety of ways. A webpack plugin is a JavaScript object that has an apply property. This apply property is called by the webpack compiler, giving access to the entire compilation lifecycle. Webpack comes with a multiple built-in plugins available under `webpack.[plugin-name]`
 
-***Question:*** What is difference between loader and plugin
+***Question:*** What is the difference between loader and plugin
 
 ***Answer:*** https://stackoverflow.com/a/38281240/3283209
 
-***Question:*** What is advantage of CompressionPlugin?
+***Question:*** What is the advantage of CompressionPlugin?
 
 ***Answer:*** CompressionPlugin builds gzip-ed version of bundles. Its possible to simply add server side compression e.g using nginx or expres compression plugin. Server-side compression is not recommended because it addes load on CPU and increases response time.
 
-***Question:*** How to move some data (e.g css code) from bundle to separate file in webpack?
+***Question:*** How to move some data (e.g css code) from a bundle to a separate file in webpack?
 
 ***Answer:*** using ExtractTextWebpackPlugin. It moves all the required *.css modules in entry chunks into a separate CSS file. So your styles are no longer inlined into the JS bundle, but in a separate CSS file (styles.css). If your total stylesheet volume is big, it will be faster because the CSS bundle is loaded in parallel to the JS bundle. 
 https://github.com/webpack-contrib/extract-text-webpack-plugin
 
-***Question:*** Name plugins you think are very important and helpful
+***Question:*** Name some plugins you think are very important and helpful
 
 ***Answer:*** CommonsChunkPlugin, DefinePlugin, HtmlWebpackPlugin, ExtractTextWebpackPlugin, CompressionWebpackPlugin
 
@@ -124,11 +127,11 @@ https://github.com/webpack-contrib/extract-text-webpack-plugin
 
 ### Development
 
-***Question*** What is advantage of webpack-dev-server over simple `http` server or `nginx`?
+***Question*** What are some advantages of using webpack-dev-server over simple `http` server or `nginx`?
 
 ***Answer:*** webpack-dev-server simplifies development process due to integrated fast in-memory access to the webpack assets and hot-modules-replacement features.
 
-***Question:*** On which platform webpack-dev-server is developed?
+***Question:*** On which platform is webpack-dev-server developed?
 
 ***Answer:*** webpack-dev-server is express (node.js) application.
 
@@ -140,7 +143,7 @@ https://github.com/webpack-contrib/extract-text-webpack-plugin
 
 ***Answer:*** Using devtool: 'source-map' (there are various other configurations for source maps, view full list [here](https://webpack.js.org/configuration/devtool/#devtool))
 
-***Question:*** How to automatically build and update bundles in browser after a change in source code?
+***Question:*** How to automatically build and update bundles in the browser after a change in source code?
 
 ***Answer:*** Using `watch: true` and `devServer: { hot: true }` options together.
 
@@ -203,7 +206,7 @@ or
 
 ***Answer:*** UglifyJS plugin.
 
-***Question:*** Why OccurenceOrderPlugin is the part of webpack optimization. What it has to do with module ids and topological sorting?
+***Question:*** Why is OccurenceOrderPlugin the part of webpack optimization. What it has to do with module ids and topological sorting?
 
  ***Answer:*** OccurenceOrderPlugin order the modules and chunks by occurrence. More module occurs - smaller id it has, this technique helps to reduce bundle size, because a module is used many times will be referenced many times with webpack_require(moduleId).
 
@@ -245,30 +248,30 @@ or
 
 ***Answer:*** No, it’s now included by default.
 
-***Question:*** Which versions of webpack support es6 modules from box?
+***Question:*** Which version(s) of webpack support es6 modules out the box?
 
 ***Answer:*** webpack 2+
 
-***Question:*** Which versions of webpack support json-loader from box?
+***Question:*** Which version(s) of webpack support json-loader out the box?
 
 ***Answer:*** webpack 2+
 
-***Question:*** Which versions of webpack support code splitting?
+***Question:*** Which version(s) of webpack support code splitting?
 
 ***Answer:*** All versions
 
 
 ### Advanced questions
 
-***Question:*** Describe webpack runtime and manifest.
+***Question:*** Describe the webpack runtime and manifest.
 
 ***Answer:*** https://webpack.js.org/concepts/manifest/
 
-***Question:*** Is it possible to use other language (except javascript) for webpack config file?
+***Question:*** Is it possible to use other languages (except javascript) for the webpack config file?
 
 ***Answer:*** Yes, webpack accepts configuration files written in multiple programming and data languages, such as typescript, coffeescript, babel and jsx. The list of supported file extensions can be found [here](https://github.com/js-cli/js-interpret).
 
-***Question:*** Is it possible to have different configurations' files for different environments?
+***Question:*** Is it possible to have different configuration files for different environments?
 
 ***Answer:*** Yes, read more [here](https://aishwaryavaishno.wordpress.com/2017/04/17/webpack-configuration-for-multiple-environments/)
 
