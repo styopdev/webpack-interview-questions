@@ -83,8 +83,16 @@
     }
 ```
     
-***Answer:*** 
+***Answer:*** This code is intended to transform and load sass files as webpack modules.
+  This config tells to webpack to search for all files which have `.scss` extension, then applies the following loaders on them, from right to left order:
 
+   1. `postcss-loader` - transforms postcss to sass code.
+   2. `sass-loader` - transforms sass to plain css.
+   3. `css-loader` - reads css file, resolves `import` and `url(...)` statements.
+   4. `style-loader` - creates `<style>` tags in the page's `<head>` element containing css returned by `css-loader`.
+
+  Due to `?sourceMap` at the end of css-loader and sass-loader, source maps for all .scss files will be created.
+   
 ***Question:*** Do loaders work in a synchronous or an asynchronous way?
   
 ***Answer:*** Both. Loaders can work synchronous or asynchronous.
