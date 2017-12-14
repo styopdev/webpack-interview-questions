@@ -214,6 +214,10 @@ or
 
 ***Answer:*** UglifyJS plugin.
 
+***Question:*** How to remove unused selectors from css using webpack?
+
+***Answer*** Using [purifycss-webpack](https://github.com/webpack-contrib/purifycss-webpack) plugin
+
 ***Question:*** Why is OccurenceOrderPlugin the part of webpack optimization. What it has to do with module ids and topological sorting?
 
  ***Answer:*** OccurenceOrderPlugin order the modules and chunks by occurrence. More module occurs - smaller id it has, this technique helps to reduce bundle size, because a module is used many times will be referenced many times with webpack_require(moduleId).
