@@ -102,6 +102,7 @@ Big thanks to [TheLarkInn](https://github.com/TheLarkInn), [raybooysen](https://
       /(en-gb|en-us)\.js/
     })
   ```
+* How to remove unused selectors from css using webpack?
 * How to achieve lazy loading in webpack?
 * Why is OccurenceOrderPlugin part of webpack optimization? What it has to do with module ids and topological sorting?
 * What analysis tools do you use for webpack bundle's inspection?
