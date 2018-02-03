@@ -221,7 +221,7 @@ or
       /(en-gb|en-us)\.js/
     )
   ```
-***Answer:*** This code tells webpack to include only those files which names match to `/(en-gb|en-us)\.js/` pattern from `/moment[\/\\]locale/` path. It is used to optimize final bundle excluding unused locales. So if you need to use e.g french language's locale as well, you should add it to second regex like this: `/(en-gb|en-us|fr)\.js/`.
+***Answer:*** This code tells to webpack to include only those files which names match to `/(en-gb|en-us)\.js/` pattern from `/moment[\/\\]locale/` path. It used to optimize final bundle excluding unused locales. So if you need to use e.g french language's locale as well then you should add it to second regex like this: `/(en-gb|en-us|fr)\.js/`.
 
 ***Question:*** How to remove unused selectors from css using webpack?
 
