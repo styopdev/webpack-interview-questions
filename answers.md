@@ -214,9 +214,18 @@ or
 
 ***Answer:*** UglifyJS plugin.
 
+***Question:*** Explain this code
+ ```javascript
+    new webpack.ContextReplacementPlugin(
+      /moment[\/\\]locale/,
+      /(en-gb|en-us)\.js/
+    )
+  ```
+***Answer:*** This code tells webpack to include only those files which names match to `/(en-gb|en-us)\.js/` pattern from `/moment[\/\\]locale/` path. It is used to optimize final bundle excluding unused locales. So if you need to use e.g french language's locale as well, you should add it to second regex like this: `/(en-gb|en-us|fr)\.js/`.
+
 ***Question:*** How to remove unused selectors from css using webpack?
 
-***Answer*** Using [purifycss-webpack](https://github.com/webpack-contrib/purifycss-webpack) plugin
+***Answer:*** Using [purifycss-webpack](https://github.com/webpack-contrib/purifycss-webpack) plugin
 
 ***Question:*** Why is OccurenceOrderPlugin the part of webpack optimization. What it has to do with module ids and topological sorting?
 

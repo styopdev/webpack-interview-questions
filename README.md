@@ -97,10 +97,10 @@ Big thanks to [TheLarkInn](https://github.com/TheLarkInn), [raybooysen](https://
 * Which built-in plugin should be used for code minification?
 * Explain this code
  ```javascript
-    new webpack.ContextReplacementPlugin({
+    new webpack.ContextReplacementPlugin(
       /moment[\/\\]locale/,
       /(en-gb|en-us)\.js/
-    })
+    )
   ```
 * How to remove unused selectors from css using webpack?
 * How to achieve lazy loading in webpack?
